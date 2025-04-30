@@ -472,8 +472,8 @@ static void wifi_connect(void) {
 // WIFI connection stuff from AP lab
 void app_main(void) {
     nvs_flash_init();
-    strcpy(ssid, "NETGEAR19");
-    strcpy(password, "hossbear");
+    strcpy(ssid, "");
+    strcpy(password, "");
     wifi_connect();
     gpio_reset_pin(DHT_PIN);
     init_pwm();
